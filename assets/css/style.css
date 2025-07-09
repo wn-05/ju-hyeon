@@ -30,8 +30,8 @@ body {
     line-height: 25px;
     font-weight: 300;
     font-size: 16px;
-    color: #282828;
-    background-color: #f5f5f5;
+    color: #3a3a3a;
+    background-color: #fff;
     -webkit-text-size-adjust: 100%;
     -webkit-overflow-scrolling: touch;
     -webkit-font-smoothing: antialiased !important;
@@ -45,7 +45,7 @@ html {
 /* Link style
 ---------------------------------------------------------*/
 a {
-    color: #68c3a3;
+    color: #7D8588;
 }
 
 a,
@@ -151,7 +151,7 @@ h6 {
 }
 
 .form-control:focus {
-    border-color: #68c3a3;
+    border-color: #7D8588;
     box-shadow: none;
 }
 
@@ -196,7 +196,7 @@ h6 {
 
 /*btn-primary*/
 .btn-primary {
-    background-color: #68c3a3;
+    background-color: #7D8588;
     border-color: rgba(51, 51, 51, 0.15);
 }
 
@@ -240,7 +240,7 @@ h6 {
 .btn-default.focus,
 .btn-default:active,
 .btn-default.active {
-    color: #68c3a3;
+    color: #7D8588;
     background-color: #fff;
     border-color: #fff;
 }
@@ -283,7 +283,7 @@ ul.list-check li {
 ul.list-check li::before {
     content: "\f00c";
     font-family: fontawesome;
-    color: #68c3a3;
+    color: #7D8588;
     margin-right: 10px;
 }
 
@@ -326,8 +326,10 @@ ul.list-check li::before {
     }
 }
 
+#home video{width: 100%;
+    margin: auto;}
 
-#home {
+/* #home {
     background: url(../images/home2.jpg) no-repeat center center;
     -webkit-background-attachment: fixed;
     background-attachment: fixed;
@@ -345,7 +347,7 @@ ul.list-check li::before {
     left: 0;
     width: 100%;
     height: 100%;
-}
+} */
 
 .intro {
     position: absolute;
@@ -365,11 +367,11 @@ ul.list-check li::before {
     font-size: 60px;
     line-height: 80px;
     margin-bottom: 16px;
-    color: #52b3d9;
+    color: #7D8588;
 }
 
 .intro h1 span {
-    color: #68c3a3;
+    color: #7D8588;
 }
 
 .intro p {
@@ -431,7 +433,7 @@ SOCIAL ICON
 }
 
 .social-icons a i:hover::after {
-    background: #68c3a3;
+    background: #7D8588;
     border: 1px solid transparent;
     z-index: 0;
 }
@@ -439,7 +441,7 @@ SOCIAL ICON
 
 /* === NAVIGATION === */
 .header {
-    border-bottom: 1px solid #eee;
+    /* border-bottom: 1px solid #eee; */
     position: relative;
     width: 100%;
     z-index: 998;
@@ -448,7 +450,7 @@ SOCIAL ICON
 }
 
 .header::after {
-    border-bottom: 1px solid #eee;
+    /* border-bottom: 1px solid #eee; */
     width: 100%;
     position: absolute;
     content: "";
@@ -482,7 +484,7 @@ SOCIAL ICON
     visibility: hidden;
     opacity: 0;
     border: 1px solid #ddd;
-    border-top: 2px solid #68c3a3;
+    border-top: 2px solid #7D8588;
     border-radius: 0;
     border-bottom: 3px double #ddd;
     background-color: #FFFFFF;
@@ -534,7 +536,7 @@ SOCIAL ICON
 .navbar-custom .navbar-nav>li.active>a {
     background: none;
     outline: 0;
-    color: #68c3a3;
+    color: #7D8588;
 }
 
 .navbar-custom .navbar-brand {
@@ -609,6 +611,15 @@ SOCIAL ICON
     height: 20px;
 }
 
+
+/* 소개글 */
+.about_p{font-size: 18px;
+font-weight: ;}
+
+.about_p2{color:#7D8588;
+font-weight: bold;}
+
+
 .myphoto {
     position: relative;
 }
@@ -617,6 +628,7 @@ SOCIAL ICON
     position: relative;
     z-index: -1;
     border-radius: 50%;
+    width: 80%;
 }
 
 .biography ul {
@@ -647,7 +659,7 @@ SOCIAL ICON
 }
 
 .entry-title {
-    padding: 15px 0;
+    padding: 20px 0;
 }
 
 .entry-title p {
@@ -658,7 +670,7 @@ SOCIAL ICON
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .button a {
@@ -703,7 +715,7 @@ Icon for all respective meta
 
 /* === Artwork Section === */
 .works-section {
-    background-color: #f7f7f7;
+    background-color: #f2f2f2;
 }
 
 .works-section h3 {
@@ -774,7 +786,7 @@ Icon for all respective meta
 
 .links i {
     position: relative;
-    color: #68c3a3;
+    color: #7D8588;
     font-size: 16px;
     margin: 0 13px;
     z-index: 100;
@@ -791,7 +803,7 @@ Icon for all respective meta
     top: -7px;
     width: 30px;
     height: 30px;
-    border: 1px solid #68c3a3;
+    border: 1px solid #7D8588;
     z-index: -1;
     border-radius: 3px;
     -webkit-transform: rotate(45deg);
@@ -802,14 +814,14 @@ Icon for all respective meta
 }
 
 .links i::after {
-    background-color: #68c3a3;
+    background-color: #7D8588;
 }
 
 .portfolio-info {
     position: absolute;
     bottom: -100%;
     left: 0;
-    background-color: #68c3a3;
+    background-color: #7D8588;
     color: #fff;
     height: 45px;
     width: 100%;
@@ -883,7 +895,12 @@ Resume Timeline
 -----------------------------------------------------------*/
 .resume-title h3 {
     text-align: center;
+    font-size: 18px;
+    color: #7D8588;
+    padding-bottom: 20px;
 }
+
+#resume h2, #skills h2{text-align: center;}
 
 .resume-section>div>div {
     margin-bottom: 60px;
@@ -913,7 +930,7 @@ Resume Timeline
     top: -8px;
     width: 10px;
     height: 10px;
-    background-color: #e1e1e1;
+    background-color: #ccc;
     left: 50%;
     margin-left: -6px;
     -webkit-transform: rotate(45deg);
@@ -929,7 +946,7 @@ Resume Timeline
     bottom: -8px;
     width: 10px;
     height: 10px;
-    background-color: #e1e1e1;
+    background-color: #ccc;
     left: 50%;
     margin-left: -6px;
     -webkit-transform: rotate(45deg);
@@ -946,7 +963,7 @@ Resume Timeline
     bottom: 0;
     width: 2px;
     margin-left: -1.5px;
-    background-color: #e1e1e1;
+    background-color: #ccc;
 }
 
 .timeline>li {
@@ -973,6 +990,7 @@ Resume Timeline
 
 .timeline-content {
     padding: 5px 20px 0 20px;
+    border-radius: 0px;
 }
 
 .timeline>li .timeline-panel:before {
@@ -992,7 +1010,7 @@ Resume Timeline
 .timeline>li .posted-date {
     position: relative;
     text-align: center;
-    background-color: #fff;
+    /* background-color: #fff; */
     left: 20px;
 }
 
@@ -1002,7 +1020,7 @@ Resume Timeline
     line-height: 20px;
     font-weight: 700;
     display: block;
-    color: #2c3e50;
+    color: #ccc;
     top: 0;
     float: left;
 }
@@ -1030,15 +1048,19 @@ Resume Timeline
     margin-bottom: 0;
 }
 
+
+.timeline-heading{padding: 0 20px;}
+
 .timeline-heading h3 {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 28px;
 }
 
 .timeline-heading span {
     display: block;
-    font-weight: 700;
-    margin-bottom: 20px;
+    font-weight: 400;
+    margin-bottom: 0px;
+    font-size: 14px;
 }
 
 
@@ -1051,7 +1073,7 @@ Resume Timeline
     }
 
     .timeline>li {
-        margin-bottom: 15px;
+        margin-bottom: 0px;
         min-height: 100px;
     }
 
@@ -1065,13 +1087,13 @@ Resume Timeline
         float: left;
         width: 43%;
         text-align: right;
-        border: 1px solid #eee;
+        /* border: 1px solid #eee; */
         position: relative;
     }
 
     .timeline-content {
         position: relative;
-        padding: 24px;
+        padding: 10px;
         background-color: #fff;
         -webkit-transition: all 400ms;
         -moz-transition: all 400ms;
@@ -1080,7 +1102,7 @@ Resume Timeline
     }
 
     .timeline-content::after {
-        border: 1px solid #eee;
+        /* border: 1px solid #eee; */
         width: 100%;
         position: absolute;
         content: "";
@@ -1091,8 +1113,8 @@ Resume Timeline
     }
 
     .timeline>li .timeline-content:hover {
-        background: #68c3a3;
-        color: #fff;
+        /* background: #7D8588; */
+        color: #7D8588;
     }
 
     .timeline>li .timeline-panel::before,
@@ -1114,7 +1136,7 @@ Resume Timeline
     }
 
     .timeline>li .timeline-panel:hover::before {
-        border-left: 12px solid #68c3a3;
+        /* border-left: 12px solid #7D8588; */
     }
 
     .timeline>li.timeline-inverted .timeline-panel::before {
@@ -1127,7 +1149,7 @@ Resume Timeline
     }
 
     .timeline>li.timeline-inverted .timeline-panel:hover::before {
-        border-right: 12px solid #68c3a3;
+        /* border-right: 12px solid #7D8588; */
         border-left: 0;
     }
 
@@ -1151,7 +1173,7 @@ Resume Timeline
     }
 
     .timeline>li .timeline-panel:hover::after {
-        border-left: 12px solid #68c3a3;
+        border-left: 12px solid #7D8588;
     }
 
     .timeline>li.timeline-inverted .timeline-panel::after {
@@ -1165,7 +1187,7 @@ Resume Timeline
     }
 
     .timeline>li.timeline-inverted .timeline-panel:hover::after {
-        border-right: 12px solid #68c3a3;
+        border-right: 12px solid #7D8588;
         border-left: 0;
     }
 
@@ -1187,13 +1209,13 @@ Resume Timeline
 
 /* === Skill Section === */
 .skills-section {
-    background-color: #1a1e23;
+    background-color: #7D8588;
     color: #fff;
 }
 
 .skills-section .section-title {
     color: #fff;
-    margin-bottom: 110px;
+    margin-bottom: 50px;
 }
 
 .skills-section .section-title h2 {
@@ -1223,14 +1245,14 @@ Resume Timeline
 .progress {
     height: 10px;
     margin-bottom: 40px;
-    background-color: #3a4149;
-    border-radius: 3px;
+    background-color: #333;
+    border-radius: 50px;
     box-shadow: none;
     width: 75%;
 }
 
 .progress-bar {
-    background-color: #68c3a3;
+    background-color: #f2f2f2;
 }
 
 .progress-bar span {
@@ -1248,7 +1270,7 @@ Resume Timeline
 
 
 .skill-chart h3 {
-    margin-top: 20px;
+    margin: 30px 0 10px;
 }
 
 .our-progress {
@@ -1265,7 +1287,10 @@ Resume Timeline
     margin-bottom: 5px;
 }
 
-
+/* 스킬 동그라미 */
+.more-skill{display: flex;
+    flex-wrap: wrap;
+justify-content: space-around;}
 
 /* === Chart CSS  === */
 .chart {
@@ -1348,9 +1373,9 @@ Resume Timeline
 
 /* === Footer Wrapper === */
 .footer-wrapper {
-    background: #1a1e23;
+    background: #333;
     padding: 36px 0;
-    color: #fff;
+    color: #b0b0b0;
 
 }
 
@@ -1372,7 +1397,8 @@ Resume Timeline
 }
 
 .scroll-up a {
-    background-color: #68c3a3;
+    background-color: #3a3a3a;
+    border-radius: 50px;
     display: block;
     width: 28px;
     height: 28px;
@@ -1665,7 +1691,7 @@ Resume Timeline
 }
 
 .personal-info h1 span {
-    color: #68c3a3;
+    color: #7D8588;
 }
 
 .personal-info p {
