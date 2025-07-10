@@ -37,10 +37,12 @@ body {
     -webkit-font-smoothing: antialiased !important;
 }
 
-/* body,
+
+/* 재확인 */
+body,
 html {
     overflow-x: hidden;
-} */
+}
 
 /* Link style
 ---------------------------------------------------------*/
@@ -848,6 +850,28 @@ Icon for all respective meta
     font-weight: 700;
     margin: 0;
 }
+
+
+/* 작품사진 */
+.swiper {
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 300px;
+      height: 300px;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+    }
+    
+
 
 
 /* === Popup Section === */

@@ -273,23 +273,57 @@ jQuery(function ($) {
     // -------------------------------------------------------------
     // Popup JS
     // -------------------------------------------------------------
-    
-    $(function(){
-		$('#popup01').click(function(){
-			$('#pop01').show();
-		});
-		$('#popup02').click(function(){
-			$('#pop02').show();
-		});
 
-		$('.popup i').click(function(){
-			$('.popup').hide();
-		});
-	});
+    $(function () {
+        $('#popup01').click(function () {
+            $('#pop01').show();
+        });
+        $('#popup02').click(function () {
+            $('#pop02').show();
+        });
+
+        $('.popup i').click(function () {
+            $('.popup').hide();
+        });
+    });
 
 });
 
 
 
+
+// swiper
+
+document.addEventListener("DOMContentLoaded", function () {
+  var swiper = new Swiper(".mySwiper", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    slidesPerView: 3,
+
+// centeredSlides: true,
+//     slidesPerView: 1.5, // 👉 양옆 슬라이드 일부 보이게
+//     spaceBetween: 30,   // 👉 슬라이드 간 여백
+
+    loop: true, // 무한 반복
+    autoplay: {
+      delay: 3000,   // 3초마다 자동 전환
+      disableOnInteraction: false, // 사용자 조작 후에도 계속 자동 재생
+    },
+    speed: 2000, // 전환 애니메이션 속도 (1초)
+    coverflowEffect: {
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true, // 페이지네이션 클릭 가능하게
+    },
+  });
+});
 
 
