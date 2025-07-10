@@ -39,8 +39,7 @@ body {
 
 
 /* 재확인 */
-body,
-html {
+body{
     overflow-x: hidden;
 }
 

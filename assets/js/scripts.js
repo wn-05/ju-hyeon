@@ -21,25 +21,49 @@ Author URL: trendytheme.net
 
 */
 
+// swiper
+
+document.addEventListener("DOMContentLoaded", function () {
+    var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        slidesPerView: 3,
+
+        // centeredSlides: true,
+        //     slidesPerView: 1.5, // 👉 양옆 슬라이드 일부 보이게
+        //     spaceBetween: 30,   // 👉 슬라이드 간 여백
+
+        loop: true, // 무한 반복
+        autoplay: {
+            delay: 3000,   // 3초마다 자동 전환
+            disableOnInteraction: false, // 사용자 조작 후에도 계속 자동 재생
+        },
+        speed: 2000, // 전환 애니메이션 속도 (1초)
+        coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: false,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true, // 페이지네이션 클릭 가능하게
+        },
+    });
+});
+
+new WOW({
+
+    mobile: false
+
+}).init();
+
 jQuery(function ($) {
 
     'use strict';
-
-    // -------------------------------------------------------------
-    // Animated scrolling / Scroll Up
-    // -------------------------------------------------------------
-
-    // (function () {
-    //     $('a[href*=#]').bind("click", function (e) {
-    //         var anchor = $(this);
-    //         $('html, body').stop().animate({
-    //             scrollTop: $(anchor.attr('href')).offset().top
-    //         }, 1000);
-    //         e.preventDefault();
-    //     });
-    // }());
-
-
 
     // -------------------------------------------------------------
     // Full Screen Slider
@@ -145,98 +169,6 @@ jQuery(function ($) {
     });
 
 
-    // -------------------------------------------------------------
-    // Shuffle
-    // -------------------------------------------------------------
-
-    // (function () {
-
-    //     var $grid = $('#grid');
-
-    //     $grid.shuffle({
-    //         itemSelector: '.portfolio-item'
-    //     });
-
-    //     /* reshuffle when user clicks a filter item */
-    //     $('#filter a').click(function (e) {
-    //         e.preventDefault();
-
-    //         // set active class
-    //         $('#filter a').removeClass('active');
-    //         $(this).addClass('active');
-
-    //         // get group name from clicked item
-    //         var groupName = $(this).attr('data-group');
-
-    //         // reshuffle grid
-    //         $grid.shuffle('shuffle', groupName);
-    //     });
-
-
-    // }());
-
-
-    // -------------------------------------------------------------
-    // Magnific Popup
-    // -------------------------------------------------------------
-
-    // (function () {
-    //     $('.image-link').magnificPopup({
-
-    //         gallery: {
-    //             enabled: true
-    //         },
-    //         removalDelay: 300, // Delay in milliseconds before popup is removed
-    //         mainClass: 'mfp-with-zoom', // this class is for CSS animation below
-    //         type: 'image'
-    //     });
-
-    // }());
-
-
-
-    // (function () {
-    //     $('.popup-video').magnificPopup({
-    //         disableOn: 700,
-    //         type: 'iframe',
-    //         mainClass: 'mfp-with-zoom',
-    //         removalDelay: 300,
-    //         preloader: false,
-    //         fixedContentPos: false
-    //     });
-    // }());
-
-    // -------------------------------------------------------------
-    // Fit Vids
-    // -------------------------------------------------------------
-    (function () {
-        $(".video-container").fitVids();
-    }());
-
-
-
-    // -------------------------------------------------------------
-    // Vidio auto play
-    // -------------------------------------------------------------
-    (function () {
-
-        /* Vimeo API: http://developer.vimeo.com/player/js-api */
-
-        var iframe = document.getElementById('nofocusvideo');
-        // $f == Froogaloop
-        var player = $f(iframe);
-
-        $('.modal').on('hidden.bs.modal', function () {
-            player.api('pause');
-        })
-
-        $('.modal').on('shown.bs.modal', function () {
-            player.api('play');
-        })
-    }());
-
-
-
 
     // -------------------------------------------------------------
     // STELLAR FOR BACKGROUND SCROLLING
@@ -260,15 +192,11 @@ jQuery(function ($) {
     // WOW JS
     // -------------------------------------------------------------
 
-    (function () {
+    // (function () {
 
-        new WOW({
 
-            mobile: false
 
-        }).init();
-
-    }());
+    // }());
 
     // -------------------------------------------------------------
     // Popup JS
@@ -292,38 +220,6 @@ jQuery(function ($) {
 
 
 
-// swiper
 
-document.addEventListener("DOMContentLoaded", function () {
-  var swiper = new Swiper(".mySwiper", {
-    effect: "coverflow",
-    grabCursor: true,
-    centeredSlides: true,
-    slidesPerView: "auto",
-    slidesPerView: 3,
-
-// centeredSlides: true,
-//     slidesPerView: 1.5, // 👉 양옆 슬라이드 일부 보이게
-//     spaceBetween: 30,   // 👉 슬라이드 간 여백
-
-    loop: true, // 무한 반복
-    autoplay: {
-      delay: 3000,   // 3초마다 자동 전환
-      disableOnInteraction: false, // 사용자 조작 후에도 계속 자동 재생
-    },
-    speed: 2000, // 전환 애니메이션 속도 (1초)
-    coverflowEffect: {
-      rotate: 50,
-      stretch: 0,
-      depth: 100,
-      modifier: 1,
-      slideShadows: false,
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true, // 페이지네이션 클릭 가능하게
-    },
-  });
-});
 
 
