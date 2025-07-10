@@ -37,10 +37,10 @@ body {
     -webkit-font-smoothing: antialiased !important;
 }
 
-body,
+/* body,
 html {
-    /* overflow-x: hidden; */
-}
+    overflow-x: hidden;
+} */
 
 /* Link style
 ---------------------------------------------------------*/
@@ -603,7 +603,7 @@ SOCIAL ICON
 
 .biography::after {
     content: "";
-    border-bottom: 1px solid #EEEEEE;
+    /* border-bottom: 1px solid #EEEEEE; */
     position: absolute;
     bottom: -3px;
     width: 100%;
@@ -641,9 +641,9 @@ font-weight: bold;}
     border-bottom: 1px solid #EEEEEE;
 }
 
-.biography ul li:last-child {
+/* .biography ul li:last-child {
     border-bottom: 0;
-}
+} */
 
 
 /* === Portfolio Section === */
