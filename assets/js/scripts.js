@@ -32,8 +32,8 @@ document.addEventListener("DOMContentLoaded", function () {
         slidesPerView: 3,
 
         // centeredSlides: true,
-        //     slidesPerView: 1.5, // 👉 양옆 슬라이드 일부 보이게
-        //     spaceBetween: 30,   // 👉 슬라이드 간 여백
+        //     slidesPerView: 1.5, // 양옆 슬라이드 일부 보이게
+        //     spaceBetween: 30,   // 슬라이드 간 여백
 
         loop: true, // 무한 반복
         autoplay: {

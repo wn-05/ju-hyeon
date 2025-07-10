@@ -39,7 +39,7 @@ body {
 
 
 /* 재확인 */
-body{
+body {
     overflow-x: hidden;
 }
 
@@ -126,7 +126,10 @@ h3 {
     font-size: 24px;
     line-height: 24px;
 }
-.h3_span {font-size: 18px;}
+
+.h3_span {
+    font-size: 18px;
+}
 
 h4 {
     font-size: 18px;
@@ -327,8 +330,10 @@ ul.list-check li::before {
     }
 }
 
-#home video{width: 100%;
-    margin: auto;}
+#home video {
+    width: 100%;
+    margin: auto;
+}
 
 /* #home {
     background: url(../images/home2.jpg) no-repeat center center;
@@ -600,6 +605,8 @@ SOCIAL ICON
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     position: relative;
+
+    align-items: center;
 }
 
 .biography::after {
@@ -614,11 +621,15 @@ SOCIAL ICON
 
 
 /* 소개글 */
-.about_p{font-size: 18px;
-font-weight: ;}
+.about_p {
+    font-size: 18px;
+    font-weight: ;
+}
 
-.about_p2{color:#7D8588;
-font-weight: bold;}
+.about_p2 {
+    color: #7D8588;
+    font-weight: bold;
+}
 
 
 .myphoto {
@@ -853,27 +864,42 @@ Icon for all respective meta
 
 /* 작품사진 */
 .swiper {
-      width: 100%;
-      padding-top: 50px;
-      padding-bottom: 50px;
-    }
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
 
-    .swiper-slide {
-      background-position: center;
-      background-size: cover;
-      width: 300px;
-      height: 300px;
-    }
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+}
 
-    .swiper-slide img {
-      display: block;
-      width: 100%;
-  height: 100%;
-  object-fit: contain; /* 비율 유지하면서 전체 이미지 보임 */
-  background: #f2f2f2; /* 여백 배경색, 필요시 흰색 등으로 변경 가능 */
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    /* 비율 유지하면서 전체 이미지 보임 */
+    background: #f2f2f2;
+    /* 여백 배경색, 필요시 흰색 등으로 변경 가능 */
 
-    }
-    
+    /* transition: transform 0.5s ease; */
+    /* 이미지가 스르륵 확대되도록 */
+
+}
+
+/* .swiper-slide-active img {
+    transform: scale(1);
+} */
+
+/* .swiper-slide-prev img,
+.swiper-slide-next img {
+    transform: scale(0.8);
+} */
+ 
+
 
 
 
@@ -911,7 +937,7 @@ Icon for all respective meta
     cursor: pointer;
 }
 
-.popup_in img{
+.popup_in img {
     width: 49%;
 }
 
@@ -927,7 +953,10 @@ Resume Timeline
     padding-bottom: 20px;
 }
 
-#resume h2, #skills h2{text-align: center;}
+#resume h2,
+#skills h2 {
+    text-align: center;
+}
 
 .resume-section>div>div {
     margin-bottom: 60px;
@@ -1076,7 +1105,9 @@ Resume Timeline
 }
 
 
-.timeline-heading{padding: 0 20px;}
+.timeline-heading {
+    padding: 0 20px;
+}
 
 .timeline-heading h3 {
     font-size: 18px;
@@ -1315,9 +1346,11 @@ Resume Timeline
 }
 
 /* 스킬 동그라미 */
-.more-skill{display: flex;
+.more-skill {
+    display: flex;
     flex-wrap: wrap;
-justify-content: space-around;}
+    justify-content: space-around;
+}
 
 /* === Chart CSS  === */
 .chart {
@@ -1734,7 +1767,3 @@ justify-content: space-around;}
     padding: 5px;
     box-shadow: 0 0px 0px 1px #eee;
 }
-
-
-
-
