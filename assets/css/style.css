@@ -342,31 +342,37 @@ ul.list-check li::before {
 
 /* === HOME === */
 @media (max-width : 640px) {
-    .tt-fullHeight {
-        height: 560px !important;}
+    /* .tt-fullHeight {
+        height: 560px !important;
+    } */
 
-        /* 배경이미지 설정 */
-        body {
-    background-image: none;
+    /* 배경이미지 설정 */
+    body {
+        background-image: none;
+    }
 
     .video-pc {
-      display: none;
-    }
-    .video-mobile {
-      display: block;
+        display: none;
     }
 
-  }
+    .video-mobile {
+        display: block;
     }
+
+}
 
 #home video {
     width: 100%;
     margin: auto;
 }
 
+.video-pc {
+    display: block;
+}
+
 .video-mobile {
     display: none;
-  }
+}
 
 
 
@@ -694,7 +700,9 @@ SOCIAL ICON
     border-bottom: 1px solid #EEEEEE;
 }
 
-.biography strong{color:#7D8588}
+.biography strong {
+    color: #7D8588
+}
 
 
 /* === Portfolio Section === */
