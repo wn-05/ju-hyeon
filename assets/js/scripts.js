@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         loop: true, // 무한 반복
         autoplay: {
-            delay: 3000,   // 3초마다 자동 전환
+            delay: 2000,   // 3초마다 자동 전환
             disableOnInteraction: false, // 사용자 조작 후에도 계속 자동 재생
         },
         speed: 2000, // 전환 애니메이션 속도 (1초)
@@ -54,6 +54,21 @@ document.addEventListener("DOMContentLoaded", function () {
         },
     });
 });
+
+// 스와이퍼 끝
+
+
+// 마우스
+  document.querySelector('.scroll-up a').addEventListener('click', function (e) {
+    e.preventDefault(); // 기본 앵커 이동 막기
+
+    const target = document.querySelector('#home');
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth' }); // 스르륵 이동
+    }
+  });
+
+
 
 new WOW({
 
