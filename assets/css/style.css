@@ -29,7 +29,7 @@ body {
     font-family: 'Freesentation';
     line-height: 25px;
     font-weight: 300;
-    font-size: 16px;
+    font-size: 18px;
     color: #3a3a3a;
     background-color: #fff;
     -webkit-text-size-adjust: 100%;
@@ -38,10 +38,27 @@ body {
 }
 
 
-/* 재확인 */
 body {
     overflow-x: hidden;
+
+    /* 배경이미지 설정 */
+    background: url('../images/bg.png') repeat-y center;
+    background-size: 130%
 }
+
+.bg-overlay {
+    display: none;
+    /* 기본은 숨김 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    z-index: 1;
+    pointer-events: none;
+    /* 클릭 막지 않기 */
+}
+
 
 /* Link style
 ---------------------------------------------------------*/
@@ -326,14 +343,33 @@ ul.list-check li::before {
 /* === HOME === */
 @media (max-width : 640px) {
     .tt-fullHeight {
-        height: 560px !important;
+        height: 560px !important;}
+
+        /* 배경이미지 설정 */
+        body {
+    background-image: none;
+
+    .video-pc {
+      display: none;
     }
-}
+    .video-mobile {
+      display: block;
+    }
+
+  }
+    }
 
 #home video {
     width: 100%;
     margin: auto;
 }
+
+.video-mobile {
+    display: none;
+  }
+
+
+
 
 /* #home {
     background: url(../images/home2.jpg) no-repeat center center;
@@ -514,7 +550,7 @@ SOCIAL ICON
 
 .navbar-custom .navbar-nav>li>a {
     color: #282828;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 700;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -622,8 +658,8 @@ SOCIAL ICON
 
 /* 소개글 */
 .about_p {
-    font-size: 18px;
-    font-weight: ;
+    font-size: 20px;
+    /* font-weight: ; */
 }
 
 .about_p2 {
@@ -654,13 +690,11 @@ SOCIAL ICON
 
 .biography ul li {
     padding: 5px 0;
-    font-size: 16px;
+    font-size: 18px;
     border-bottom: 1px solid #EEEEEE;
 }
 
-/* .biography ul li:last-child {
-    border-bottom: 0;
-} */
+.biography strong{color:#7D8588}
 
 
 /* === Portfolio Section === */
@@ -693,10 +727,11 @@ SOCIAL ICON
 .button a {
     border: 1px solid #7D8588;
     color: #7D8588;
+    background-color: #fff;
     padding: 3px 15px;
     /* border-radius: 50px; */
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .button a:hover {
@@ -903,7 +938,7 @@ Icon for all respective meta
 .swiper-slide-next img {
     transform: scale(0.8);
 } */
- 
+
 
 
 
@@ -1131,6 +1166,8 @@ Resume Timeline
 
 
 @media(min-width:992px) {
+
+
     .timeline:before {
         left: 50%;
     }
@@ -1157,7 +1194,7 @@ Resume Timeline
     .timeline-content {
         position: relative;
         padding: 10px;
-        background-color: #fff;
+        /* background-color: #fff; */
         -webkit-transition: all 400ms;
         -moz-transition: all 400ms;
         -o-transition: all 400ms;
@@ -1599,8 +1636,8 @@ Resume Timeline
 /* === Home Page Two === */
 
 #homeTwo {
-    background: url(../images/home-2.jpg) no-repeat center center;
-    background-color: #222;
+    /* background: url(../images/home-2.jpg) no-repeat center center;
+    background-color: #222; */
     background-size: cover;
     padding: 0;
     position: relative;
