@@ -1,10 +1,3 @@
-/* Extra small devices (phones, less than 339px) */
-@media (max-width : 339px) {
-	.m-skill {
-		margin-bottom: 60px;
-	}
-}
-
 /* Extra small devices (phones, less than 768px) */
 @media (max-width : 766px) {
 	.intro h1 {
@@ -54,7 +47,7 @@
 
 
 	/*  Popup Section */
-	.popup_in{
+	.popup_in {
 		height: 80vh;
 		align-items: center;
 		align-content: space-between;
@@ -176,6 +169,58 @@
 		padding: 5px 10px;
 		font-size: 15px;
 		margin-right: 0;
+	}
+}
+
+@media (max-width : 640px) {
+	/* .tt-fullHeight {
+        height: 560px !important;
+    } */
+
+	/* 배경이미지 설정 */
+	body {
+		background-image: none;
+	}
+
+	.video-pc {
+		display: none;
+	}
+
+	.video-mobile {
+		display: block;
+	}
+
+
+	/* artwork */
+	.snsbox {
+		flex-wrap: wrap;
+		justify-content: center;
+		/* 필요시 가운데 정렬 */
+	}
+
+	.snsbox .portfolio-item {
+		width: 100%;
+		/* 또는 100%, 48%, 원하는 비율 */
+		margin-bottom: 10px;
+		/* 아래 간격 */
+	}
+
+	.artwork_h3 {
+		padding: 0px 5px;
+
+	}
+
+	/* nav */
+	.navbar-custom .navbar-nav>li>a::after {
+		display: none;
+	}
+
+}
+
+/* Extra small devices (phones, less than 339px) */
+@media (max-width : 339px) {
+	.m-skill {
+		margin-bottom: 60px;
 	}
 }
 

@@ -341,43 +341,6 @@ ul.list-check li::before {
 
 
 /* === HOME === */
-@media (max-width : 640px) {
-    /* .tt-fullHeight {
-        height: 560px !important;
-    } */
-
-    /* 배경이미지 설정 */
-    body {
-        background-image: none;
-    }
-
-    .video-pc {
-        display: none;
-    }
-
-    .video-mobile {
-        display: block;
-    }
-
-
-    /* artwork */
-    .snsbox {
-    flex-wrap: wrap;
-    justify-content: center; /* 필요시 가운데 정렬 */
-  }
-
-  .snsbox .portfolio-item {
-    width: 100%; /* 또는 100%, 48%, 원하는 비율 */
-    margin-bottom: 10px; /* 아래 간격 */
-  }
-
- .artwork_h3 {padding: 0px 5px;
-    
-  }
-
-
-
-}
 
 /* 영상 설정 */
 #home video {
@@ -766,7 +729,7 @@ SOCIAL ICON
 }
 
 .entry-title {
-    padding: 20px 0;
+    padding: 10px 0;
 }
 
 .entry-title p {
