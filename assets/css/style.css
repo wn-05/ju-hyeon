@@ -786,7 +786,13 @@ Icon for all respective meta
 .snsbox {
     overflow: hidden;
     margin-bottom: 50px;
+
+    /* 배열수정 */
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
 }
+
 
 .portfolio-item {
     padding-right: 5px;
@@ -794,12 +800,12 @@ Icon for all respective meta
     min-height: 235px;
 }
 
-.portfolio-bg {
+/* .portfolio-bg {
     background: #fff;
     padding: 5px;
     border: 1px solid #eee;
     border-bottom: 3px double #eee;
-}
+} */
 
 
 .portfolio {
@@ -950,6 +956,27 @@ Icon for all respective meta
 
 
 
+#artwork span {
+    background-color: rgba(125, 133, 136, 0.5);
+    color: #fff;
+    border-radius: 50px;
+    
+    display: flex;
+    justify-content: center;
+    margin-left: 5px;
+}
+
+#artwork h3 span{padding: 5px 20px;
+font-size: 20px;}
+
+.artwork_h3{display: flex;}
+
+.artwork_p {
+    text-align: center;
+    margin: 50px 0;
+    color: #b0b0b0;
+}
+
 
 /* === Popup Section === */
 .popup {
@@ -978,15 +1005,17 @@ Icon for all respective meta
 
 .popup_in i {
     position: absolute;
-    top: -60px;
+    top: -50px;
     right: 0%;
     font-size: 50px;
     color: #fff;
     cursor: pointer;
+
 }
 
 .popup_in img {
-    width: 49%;
+    width: 65%;
+    margin: auto;
 }
 
 /* === Resume Section === */
