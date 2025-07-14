@@ -563,6 +563,34 @@ SOCIAL ICON
     text-transform: uppercase;
 }
 
+.navbar-custom .navbar-nav > li > a {
+  position: relative;
+  display: inline-block;
+}
+
+.navbar-custom .navbar-nav > li > a {
+  position: relative;
+  display: inline-block;
+}
+
+.navbar-custom .navbar-nav > li > a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 15px; /* 밑줄 위치 - 필요 시 조정 */
+  width: 0%;
+  height: 2px;
+  background-color: rgba(125, 133, 136, 0.5); /* 밑줄 색상 */
+  transition: 0.7s ease;
+}
+
+.navbar-custom .navbar-nav > li > a:hover::after,
+.navbar-custom .navbar-nav > li.active > a::after {
+  width: 70%;
+}
+
+
 .navbar-custom .dropdown-menu>li {
     border-bottom: 1px solid #F0F0F0;
 }
@@ -585,6 +613,7 @@ SOCIAL ICON
     background: none;
     outline: 0;
     color: #7D8588;
+    text-decoration: dashed 1px solid;
 }
 
 .navbar-custom .navbar-brand {
@@ -966,8 +995,9 @@ Icon for all respective meta
     margin-left: 5px;
 }
 
-#artwork h3 span{padding: 5px 20px;
-font-size: 20px;}
+#artwork h3 span{padding: 3px 18px;
+    font-weight: 500;
+font-size: 16px;}
 
 .artwork_h3{display: flex;}
 
