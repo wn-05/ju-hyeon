@@ -229,7 +229,6 @@ h6 {
 .open>.dropdown-toggle.btn-primary {
     color: #fff;
     background-color: #4eb28f;
-    border-color: #4eb28f;
 }
 
 /*btn-info*/
@@ -595,7 +594,7 @@ SOCIAL ICON
     background: none;
     outline: 0;
     color: #7D8588;
-    text-decoration: dashed 1px solid;
+    text-decoration: 1px solid;
 }
 
 .navbar-custom .navbar-brand {
@@ -1029,6 +1028,12 @@ font-size: 16px;}
     width: 65%;
     margin: auto;
 }
+
+.popup_in2 img {
+    width: 100%;
+    margin: auto;
+}
+
 
 /* === Resume Section === */
 
